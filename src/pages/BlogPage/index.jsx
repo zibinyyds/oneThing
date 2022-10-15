@@ -1,3 +1,3 @@
 export default () =>{
-    return <div>11231</div>
+    return <div><div>2</div></div>
 }

@@ -11,6 +11,26 @@ export default defineConfig({
                 clientsClaim: true,
                 skipWaiting: true,
             },
+            includeAssets: [
+                'logo.png',
+                'apple-touch-icon.png',
+            ],
+            manifest: {
+                name: 'My Awesome App',
+                short_name: 'Nerdz',
+                icons: [
+                    {
+                        src: './public/logo.png',
+                        sizes: '192x192',
+                        type: 'image/png',
+                    },
+                    {
+                        src: './public/logo.png',
+                        sizes: '512x512',
+                        type: 'image/png',
+                    },
+                ],
+            },
         }),
     ],
 })
